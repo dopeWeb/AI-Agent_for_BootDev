@@ -51,6 +51,7 @@ class TestRunPythonFile(unittest.TestCase):
             elif "Not a Python" in label:
                 self.assertIn("is not a Python file", result)
                 self.assertTrue(result.startswith("Error:"))
+                
 
 if __name__ == "__main__":
     unittest.main()
